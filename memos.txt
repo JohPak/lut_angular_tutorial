@@ -2,4 +2,7 @@ Start the app with:
     cd angular_tour_of_heroes
     ng serve --open
 
-    
+ng serve = builds the app, starts the development server, watches the source files, and rebuilds the application as you make changes to those files.
+
+• The main skeleton locates in src/app -folder    
+
