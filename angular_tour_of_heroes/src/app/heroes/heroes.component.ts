@@ -10,7 +10,9 @@ import { Hero } from '../hero';
 })
 export class HeroesComponent implements OnInit {
 
-  // add properties
+  // hero = 'Windstorm';
+
+  // make hero an object instead
   hero: Hero = {
     id: 1,
     name: 'Windstorm'
