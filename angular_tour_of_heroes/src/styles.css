@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: rgb(192, 192, 192);
+}
+h2 {
+    color: #0d4c8a;
+    background-color: aliceblue;
+    width: max-content;
+    padding: 6px;
+    border-radius: 4px;
+}

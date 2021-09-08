@@ -6,3 +6,4 @@ ng serve = builds the app, starts the development server, watches the source fil
 
 • The main skeleton locates in src/app -folder    
 
+JÄI TÄHÄN https://angular.io/tutorial/toh-pt2#viewing-details

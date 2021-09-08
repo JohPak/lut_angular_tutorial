@@ -12,7 +12,7 @@ import { HeroesComponent } from './heroes/heroes.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule // makes Angular recognize and apply the opt-in ngModel directive (= two-way data binding syntax)
   ],
   providers: [],
   bootstrap: [AppComponent]
