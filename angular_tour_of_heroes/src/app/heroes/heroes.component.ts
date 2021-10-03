@@ -3,7 +3,11 @@ import { Component, OnInit } from '@angular/core';
 // import hero.ts
 import { Hero } from '../hero';
 
-import { HEROES } from '../mock-heroes';
+// DELETE this for now
+// import { HEROES } from '../mock-heroes';
+
+// USE service instead:
+import { HeroService } from '../hero.service';
 
 @Component({
   //selector name is the one which goes as a tag in app.component.html
@@ -21,17 +25,24 @@ export class HeroesComponent implements OnInit {
       id: 1,
       name: 'Windstorm'
     };
-    heroes = HEROES;
+    heroes: Hero[] = [];
 
   // This method assigns the clicked hero from the template to the component's selectedHero
   selectedHero?: Hero;
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }
-  
-  constructor() { }
 
-  ngOnInit(): void {
+  getHeroes(): void {
+    this.heroService.getHeroes()
+        .subscribe(heroes => this.heroes = heroes);
+  }
+  
+  constructor(private heroService: HeroService) {}
+
+
+  ngOnInit() {
+    this.getHeroes();
   }
 
 }

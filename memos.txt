@@ -8,3 +8,6 @@ ng serve = builds the app, starts the development server, watches the source fil
 
 To create new component "hero-detail":
 ng generate component hero-detail
+
+To create a new service (Services are a great way to share information among classes that don't know each other):
+ng generate service hero
